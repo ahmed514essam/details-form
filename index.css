@@ -1,0 +1,655 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.resultSide {
+    width: 35%;
+    background-image: url(./images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 641px;
+}
+
+.iputsSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 65%;
+}
+
+.container {
+    width: 40%;
+    margin: auto;
+
+}
+
+.cardNumber {
+    width: 290px;
+    height: 150px;
+    border-radius: 13px;
+    background-image: linear-gradient(to right, rgb(96, 5, 243), rgb(173, 77, 53));
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    margin-top: 50px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dici {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.numwrite {
+    width: 90%;
+    height: 30px;
+    background-color: white;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contetDateIn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.yearInputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 30%;
+    margin-left: 3px;
+}
+
+.dayInputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 30%;
+    margin-left: 10px;
+}
+
+.monthInputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 30%;
+    margin-left: 10px;
+}
+
+.contetDateIn input {
+    height: 37px;
+    font-size: 1.1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input {
+    border: 1px solid rgb(128, 128, 128);
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: .8em;
+}
+
+.nameInputs {
+    width: 100%;
+    margin-left: 5px;
+}
+
+.numberInputs {
+    width: 100%;
+    margin-left: 5px;
+}
+
+.nameInputs input {
+    width: 97%;
+    height: 35px;
+}
+
+.numberInputs input {
+    width: 97%;
+    height: 35px;
+}
+
+.nameInputs label {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+
+    width: 100%;
+}
+
+.bbttnn {
+    width: 100%;
+    margin: auto;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: 0;
+    color: white;
+    background-color: rgb(35, 16, 87);
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+
+.backCardDetails {
+    background-image: url(./images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    margin-left: 120px;
+    margin-top: 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ally {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.dateOunbut {
+    direction: rtl;
+    margin-bottom: 10px;
+    margin-right: 12px;
+    display: inline;
+}
+
+.nameOutbut {
+    direction: ltr;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    display: inline;
+}
+
+.writename {
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    height: 22px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.errRed {
+    border: 2px solid red;
+}
+
+@media (max-width:800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resultSide {
+        width: 100%;
+        background-image: url(./images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+    }
+
+    .iputsSide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10rem;
+        width: 100%;
+    }
+
+    .container {
+        width: 50%;
+
+
+    }
+
+    .cardNumber {
+        width: 290px;
+        height: 150px;
+
+
+        margin-top: 50px;
+        margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .dici {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .numwrite {
+        width: 90%;
+        height: 30px;
+        background-color: white;
+        margin: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contetDateIn {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+
+    }
+
+    .yearInputs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 30%;
+        margin-left: 3px;
+    }
+
+    .dayInputs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 30%;
+        margin-left: 10px;
+    }
+
+    .monthInputs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 30%;
+        margin-left: 10px;
+    }
+
+    .contetDateIn input {
+        height: 37px;
+        font-size: 1.1em;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    input {
+        border: 1px solid rgb(128, 128, 128);
+    }
+
+    label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: .8em;
+    }
+
+    .nameInputs {
+        width: 100%;
+        margin-left: 5px;
+    }
+
+    .numberInputs {
+        width: 100%;
+        margin-left: 5px;
+    }
+
+    .nameInputs input {
+        width: 97%;
+        height: 35px;
+    }
+
+    .numberInputs input {
+        width: 97%;
+        height: 35px;
+    }
+
+    .nameInputs label {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 20px;
+
+
+        width: 100%;
+    }
+
+    .bbttnn {
+        width: 100%;
+        margin: auto;
+        padding: 10px 20px;
+        font-weight: 600;
+        border: 0;
+        color: white;
+        background-color: rgb(35, 16, 87);
+        border-radius: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
+    }
+
+    .backCardDetails {
+        background-image: url(./images/bg-card-back.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 290px;
+        height: 150px;
+        margin-left: 120px;
+        margin-top: 40px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .ally {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .dateOunbut {
+        direction: rtl;
+        margin-bottom: 10px;
+        margin-right: 12px;
+        display: inline;
+    }
+
+    .nameOutbut {
+        direction: ltr;
+        margin-bottom: 10px;
+        margin-left: 12px;
+        display: inline;
+    }
+
+    .writename {
+        border: 1px solid black;
+        width: 80%;
+        margin: auto;
+        height: 22px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+}
+
+@media (max-width:377px) {
+    .resultSide {
+        width: 100%;
+        background-image: url(./images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .iputsSide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10rem;
+        margin-left: 0px;
+        width: 100%;
+
+    }
+
+    .container {
+        width: 90%;
+
+
+    }
+
+    .cardNumber {
+        width: 290px;
+        height: 160px;
+
+
+        margin-top: 50px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .dici {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .numwrite {
+        width: 90%;
+        height: 30px;
+        background-color: white;
+        margin: auto;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contetDateIn {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .yearInputs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 80%;
+        margin: auto;
+        margin-left: 0px;
+    }
+
+    .dayInputs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 80%;
+        margin: auto;
+        margin-left: 0px;
+    }
+
+    .monthInputs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 80%;
+        margin: auto;
+        margin-left: 0px;
+    }
+
+    .contetDateIn input {
+        height: 37px;
+        font-size: 1.1em;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    input {
+        width: 80%;
+        border: 1px solid rgb(128, 128, 128);
+    }
+
+    label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: .8em;
+    }
+
+    .nameInputs {
+        width: 90%;
+        margin-left: 5px;
+    }
+
+    .numberInputs {
+        width: 90%;
+        margin-left: 5px;
+    }
+
+    .nameInputs input {
+        width: 97%;
+        height: 35px;
+    }
+
+    .numberInputs input {
+        width: 97%;
+        height: 35px;
+    }
+
+    .nameInputs label {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 20px;
+
+
+        width: 90%;
+    }
+
+    .bbttnn {
+        width: 100%;
+        margin: auto;
+        padding: 10px 20px;
+        font-weight: 600;
+        border: 0;
+        color: white;
+        background-color: rgb(35, 16, 87);
+        border-radius: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
+    }
+
+    .backCardDetails {
+
+        width: 90%;
+        margin: auto;
+        height: 150px;
+        margin-left: 0px;
+        margin-top: 40px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+
+    }
+
+    .ally {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .dateOunbut {
+        direction: rtl;
+        margin-bottom: 10px;
+        margin-right: 2px;
+        display: inline;
+    }
+
+    .nameOutbut {
+        direction: ltr;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        display: inline;
+    }
+
+    .writename {
+        border: 1px solid black;
+        width: 80%;
+        margin: auto;
+        height: 30px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+}

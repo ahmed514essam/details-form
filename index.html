@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Details Form</title>
+  </head>
+  <body>
+    <div class="resultSide">
+      <div class="cardNumber">
+        <div class="dici"></div>
+        <div class="numwrite">
+          <h3 class="cardNum">0000 0000 0000 000E</h3>
+        </div>
+        <div class="ally">
+          <p class="nameOutbut">---</p>
+          <p class="dateOunbut">
+            <span class="days">--</span> / <span class="mon">--</span>
+          </p>
+        </div>
+      </div>
+      <div class="backCardDetails">
+        <div class="writename"></div>
+      </div>
+    </div>
+
+    <div class="iputsSide">
+      <form onsubmit="return clickSubmit()">
+        <div class="container">
+          <div class="nameInputs">
+            <label for="">CARDHOLDER NAME</label>
+            <input class="inName" type="text" name="name" placeholder="card details" required/>
+          </div>
+          <div class="numberInputs">
+            <label for="">CARD NUMBER</label>
+            <input class="inNum" type="text" name="number" placeholder="0000 0000 0000 000E" required/>
+          </div>
+          <div class="contetDateIn">
+            <div class="yearInputs">
+              <label for="">YEAR</label>
+              <input class="inye" type="number" name="year" placeholder="yyyy" required/>
+            </div>
+            <div class="monthInputs">
+              <label for="">MONTH</label>
+              <input class="inmo" type="number" name="month" placeholder="mm" required/>
+            </div>
+            <div class="dayInputs">
+              <label for="">DAY</label>
+              <input class="inda" type="number" name="day" placeholder="dd" required/>
+            </div>
+          </div>
+          <button type="submit" class="bbttnn">Confirm</button>
+        </div>
+      </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
